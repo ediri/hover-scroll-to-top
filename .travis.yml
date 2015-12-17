@@ -12,8 +12,9 @@ before_script:
   - git remote set-url origin "https://github.com/ediri/hover-scroll-to-top.git"
   - grunt build
 script:
+  - git add -f build/
   - git commit -m "build"
-  - git push -f https://github.com/ediri/hover-scroll-to-top.git master:master
+  - git push -f https://${GH_TOKEN}@github.com/ediri/hover-scroll-to-top.git master:master
 env:
   global:
   - GH_REF: github.com/ediri/hover-scroll-to-top.git
