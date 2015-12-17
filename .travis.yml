@@ -22,12 +22,3 @@ after_success:
 env:
   global:
   - GH_REF: github.com/ediri/hover-scroll-to-top.git
-  - secure: FaPjS+7zd8KFCF3S4UGhPEgwt7+rNfPDtqxvLvcP0esvVZ+JkPK4muA/pXB3WcgM8SeFl
-           kC6bTkf5DM0AiWznAZI+LFzyJh8FckF+iSbPPZBaI4jDQi2zFaO+mVAfC6Rn8I54YgI3BHfn7szGMw3s
-           5J8NLjOn+hBsNA9FmNrdMZhoW2+YrFHhl3vIDBkc3jWX+9pFs1iDt7noKblkTVMjLb64Ynoeh9luQUQn
-           YMroTqkbU1ySBEp9eWOrzKioYezH6liNAiEKZJV/hchbxQan9amOeAHpNIW4irH/7mfjp+AnoXIm/iwU
-           PYfkJPPK6jD3LNjUQOXUAQtOvurKMoBCamVp9rqwQxu9o7UTm6Ug373hAJiw1DSIEnE6YqIeqTkF55i3
-           tGeNDA1tvFzuR//xvXJRKEfl59VCAUACnNxS8dna4v9+y2UpFVCcFeXwH/JgQP0ii0SEqQ/eZJduHI9l
-           GFqZvpSj+/GVTSN8uNbPiK4eAAwYHEAn/RyXgCExYL0RTyh2vE1RSYz6fmFE+f7M2X8SAunquhNrKxF0
-           1c4gZwZrAh/4p0IKk3EWia0WHK6RfQSQA8FPsS9g19N1ixtlxewyiygEl2M5BDCHZNQS6DsLHuBBNeyK
-           gDoB6H+3pwevRShfxVkg3+wMMoQEHrYkrw92jB9WV7Z05ECzv133zU=
