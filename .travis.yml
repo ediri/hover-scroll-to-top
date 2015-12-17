@@ -10,6 +10,8 @@ before_install:
 install: npm install
 before_script:
   - grunt build
+  - ls
+  - ls build/
   - git add -f build
   - git status
   - git commit -m "build"
