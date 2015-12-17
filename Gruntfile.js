@@ -62,12 +62,30 @@ module.exports = function (grunt) {
                     banner: '<%= banner %>'
                 },
                 files: {
-                    'build/hotkeys.css': 'src/scrollToTop.css',
-                    'build/hotkeys.js': ['build/scrollToTop.js'],
+                    'build/scrollToTop.css': 'src/scrollToTop.css',
+                    'build/scrollToTop.js': ['build/scrollToTop.js'],
                 }
             }
         },
-
+        gitcommit: {
+            build: {
+                files: [
+                    {
+                        src: ["build/*.js", "build/*.css"]
+                    }
+                ]
+            }
+        },
+        gitadd: {
+            task: {
+                options: {
+                    force: true
+                },
+                files: {
+                    src: ["build/*.js", "build/*.css"]
+                }
+            }
+        },
         watch: {
             scripts: {
                 files: ['src/*.js'],
@@ -93,9 +111,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-git');
 
-    grunt.registerTask('default', ['jshint', 'ngAnnotate', 'uglify', 'cssmin', 'concat:build']);
+    grunt.registerTask('default', ['jshint', 'ngAnnotate', 'uglify', 'cssmin', 'concat:build', 'gitadd', 'gitcommit:build']);
     grunt.registerTask('build', ['default']);
 
 };
