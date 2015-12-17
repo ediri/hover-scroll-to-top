@@ -5,6 +5,9 @@ node_js:
   - "4.0"
 before_install:
   - npm install -g grunt-cli
+  - git config user.name "ediri"
+  - git config user.email "engin.diri@gmail.com"
+  - git remote add origin https://user:${GH_TOKEN}@github.com/ediri/hover-scroll-to-top.git
 install: npm install
 before_script: grunt build
 env:
