@@ -1,0 +1,14 @@
+{
+  "name": "angular-scroll-to-top",
+  "main": [
+    "build/scrollToTop.js",
+    "build/scrollToTop.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "example"
+  ]
+}
