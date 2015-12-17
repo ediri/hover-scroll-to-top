@@ -69,6 +69,9 @@ module.exports = function (grunt) {
         },
         gitcommit: {
             build: {
+                options: {
+                    cwd: "/build"
+                },
                 files: [
                     {
                         src: ["build/*.js", "build/*.css"]
@@ -80,7 +83,7 @@ module.exports = function (grunt) {
             task: {
                 options: {
                     force: true,
-                    branch:'master'
+                    branch: 'master'
                 },
                 files: {
                     src: ["build/*.js", "build/*.css"]
