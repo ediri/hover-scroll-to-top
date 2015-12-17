@@ -5,14 +5,11 @@ node_js:
   - "4.0"
 before_install:
   - npm install -g grunt-cli
-  - git config user.name "ediri"
-  - git config user.email "engin.diri@gmail.com"
-  - git remote rm origin
-  - git remote add origin https://user:${GH_TOKEN}@github.com/ediri/hover-scroll-to-top.git
 install: npm install
 before_script: grunt build
 env:
   global:
+  - GH_REF: github.com/ediri/hover-scroll-to-top.git
   - secure: FaPjS+7zd8KFCF3S4UGhPEgwt7+rNfPDtqxvLvcP0esvVZ+JkPK4muA/pXB3WcgM8SeFl
            kC6bTkf5DM0AiWznAZI+LFzyJh8FckF+iSbPPZBaI4jDQi2zFaO+mVAfC6Rn8I54YgI3BHfn7szGMw3s
            5J8NLjOn+hBsNA9FmNrdMZhoW2+YrFHhl3vIDBkc3jWX+9pFs1iDt7noKblkTVMjLb64Ynoeh9luQUQn
