@@ -15,7 +15,6 @@ script:
 after_success:
   - git checkout master
   - git commit -am "build"
-  - git merge "$TRAVIS_COMMIT"
   - git push  -fq "https://${GH_TOKEN}@${GH_REF}"
 env:
   global:
