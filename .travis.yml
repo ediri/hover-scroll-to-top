@@ -3,6 +3,9 @@ node_js:
   - "4.2"
   - "4.1"
   - "4.0"
-before_install: npm install -g grunt-cli
+before_install:
+  - npm install -g grunt-cli
+  - git config user.name "Travis-CI"
+  - git config user.email "noreply@travis-ci.org"
 install: npm install
 before_script: grunt build
