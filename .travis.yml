@@ -9,10 +9,9 @@ before_install:
   - git config user.email "engin.diri@gmail.com"
 install: npm install
 before_script:
-  - git remote set-url origin "https://github.com/ediri/hover-scroll-to-top.git"
   - grunt build
-script:
   - git add -f build
+  - git status
   - git commit -m "build"
   - git push -f https://${GH_TOKEN}@github.com/ediri/hover-scroll-to-top.git master:master
 env:
