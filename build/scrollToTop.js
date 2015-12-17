@@ -1,7 +1,7 @@
 /*! 
  * angular-scroll-to-top v0.0.1
  * http://ediri.github.io/hover-scroll-to-top
- * Copyright (c) 2015 13:36:42 ediri
+ * Copyright (c) 2015 12:36:25 ediri
  * License: Apache-2.0
  */
 /*
