@@ -1,0 +1,32 @@
+{
+  "name": "angular-hotkeys",
+  "author": "ediri",
+  "version": "0.0.1",
+  "license": "Apache License 2.0",
+  "description": "Angular JS ScrollToTop Button",
+  "homepage": "http://ediri.github.io/hover-scroll-to-top",
+  //"main": "build/xx.js",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "ScrollToTop",
+    "scroll",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ediri/hover-scroll-to-top.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ediri/hover-scroll-to-top/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-ng-annotate": "^0.3.0",
+  }
+}
