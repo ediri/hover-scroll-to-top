@@ -10,12 +10,15 @@ before_install:
   - git config push.default simple
 install:
   - npm install
+before_script:
+ - git remote rm origin
+ - git remote add origin "https://${GH_TOKEN}@${GH_REF}"
 script:
   - grunt build
 after_success:
   - git checkout master
   - git commit -am "build"
-  - git push  -fq "https://${GH_TOKEN}@${GH_REF}"
+  - git push origin master
 env:
   global:
   - GH_REF: github.com/ediri/hover-scroll-to-top.git
