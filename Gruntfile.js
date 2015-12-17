@@ -69,9 +69,6 @@ module.exports = function (grunt) {
         },
         gitcommit: {
             build: {
-                options: {
-                    cwd: "/build"
-                },
                 files: [
                     {
                         src: ["build/*.js", "build/*.css"]
