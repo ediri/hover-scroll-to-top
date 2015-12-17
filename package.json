@@ -5,7 +5,7 @@
   "license": "Apache License 2.0",
   "description": "Angular JS ScrollToTop Button",
   "homepage": "http://ediri.github.io/hover-scroll-to-top",
-  //"main": "build/xx.js",
+  "main": "build/scrollToTop.js",
   "keywords": [
     "angular",
     "angularjs",
