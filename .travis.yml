@@ -12,9 +12,8 @@ install:
 script:
   - grunt build
 before_script:
-  - cd build/
-  - git add -f *
-  - git commit -m "build"
+  - git checkout master
+  - git merge "$TRAVIS_COMMIT"
   - git push  -fq origin master
 env:
   global:
