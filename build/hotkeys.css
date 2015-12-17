@@ -1,0 +1,19 @@
+/*! 
+ * angular-scroll-to-top v0.0.1
+ * http://ediri.github.io/hover-scroll-to-top
+ * Copyright (c) 2015 ediri
+ * License: Apache License 2.0
+ */
+.scrollToTop {
+    padding: 10px;
+    text-align: center;
+    background: transparent;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 2;
+}
