@@ -67,22 +67,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        gitcommit: {
-            build: {
-                files: [
-                    {
-                        src: ["build/*.js", "build/*.css"]
-                    }
-                ]
-            }
-        },
-        gitpush: {
-            build: {
-                options: {
-                    force: true
-                },
-            }
-        },
         watch: {
             scripts: {
                 files: ['src/*.js'],
@@ -110,7 +94,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-git');
 
-    grunt.registerTask('default', ['jshint', 'ngAnnotate', 'uglify', 'cssmin', 'concat:build', 'gitcommit:build', 'gitpush:build']);
+    grunt.registerTask('default', ['jshint', 'ngAnnotate', 'uglify', 'cssmin', 'concat:build']);
     grunt.registerTask('build', ['default']);
 
 };
