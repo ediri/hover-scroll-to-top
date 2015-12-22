@@ -3,6 +3,7 @@ hover-scroll-to-top
 ===================
 Angular JS ScrollToTop Button
 
+[![Coverage Status](https://coveralls.io/repos/ediri/hover-scroll-to-top/badge.svg?branch=master&service=github)](https://coveralls.io/github/ediri/hover-scroll-to-top?branch=master)
 [![Build Status](https://travis-ci.org/ediri/hover-scroll-to-top.svg?branch=master)](https://travis-ci.org/ediri/hover-scroll-to-top)
 
 **Requirements**: Angular 1.4+
