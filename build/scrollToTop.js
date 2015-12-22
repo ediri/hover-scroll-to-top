@@ -1,5 +1,5 @@
 /*! 
- * angular-scroll-to-top v0.0.1
+ * angular-scroll-to-top v0.1.2
  * http://ediri.github.io/hover-scroll-to-top
  * Copyright (c) 2015 ediri
  * License: Apache-2.0
@@ -28,8 +28,7 @@
                         element.fadeOut();
                     }
                 });
-
-                element.click(function () {
+                element.bind('click', function () {
                     $('html, body').animate({scrollTop: 0}, 800);
                     return false;
                 });
