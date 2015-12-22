@@ -38,6 +38,6 @@ Best usage is with the lib `Font Awesome`
 
 ```html
 <a href='#' scrolltotop> 
- <i class="fa fa-4x fa-chevron-circle-up/>
+ <i class="fa fa-4x fa-chevron-circle-up></i>
 </a>
 ```
