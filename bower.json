@@ -10,5 +10,10 @@
     "components",
     "test",
     "example"
-  ]
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "jquery": ">1.7"
+  }
 }

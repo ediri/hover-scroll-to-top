@@ -16,7 +16,7 @@ Angular JS ScrollToTop Button
 #### via bower:
 
 ```
-$ bower install chieffancypants/angular-hotkeys --save
+$ bower install hover-scroll-to-top --save
 ```
 
 *please use either the minified or unminified file in the `build` directory*
@@ -34,7 +34,7 @@ angular.module('myApp', ['scrollToTop']);
 
 ### Hint
 
-Best usage is with the lib `Font Awesome`
+Best usage is with the lib [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 
 ```html
 <a href='#' scrolltotop> 

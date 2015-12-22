@@ -22,8 +22,7 @@
                         element.fadeOut();
                     }
                 });
-
-                element.click(function () {
+                element.bind('click', function () {
                     $('html, body').animate({scrollTop: 0}, 800);
                     return false;
                 });

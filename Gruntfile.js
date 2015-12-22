@@ -83,6 +83,22 @@ module.exports = function (grunt) {
                 },
             }
         },
+        karma: {
+            unit: {
+                configFile: 'test/karma.conf.js',
+                singleRun: true,
+                coverageReporter: {
+                    type: 'text',
+                    dir: 'coverage/'
+                }
+            },
+            watch: {
+                configFile: 'test/karma.conf.js',
+                singleRun: false,
+                reporters: ['progress']  // Don't display coverage
+            }
+        },
+
 
     });
 
@@ -92,9 +108,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-git');
+    grunt.loadNpmTasks('grunt-karma');
 
-    grunt.registerTask('default', ['jshint', 'ngAnnotate', 'uglify', 'cssmin', 'concat:build']);
+    grunt.registerTask('default', ['jshint', 'karma:unit', 'ngAnnotate', 'uglify', 'cssmin', 'concat:build']);
+    grunt.registerTask('test', ['karma:watch']);
     grunt.registerTask('build', ['default']);
 
 };
