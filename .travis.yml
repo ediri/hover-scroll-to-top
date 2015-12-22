@@ -5,11 +5,13 @@ node_js:
   - "4.0"
 before_install:
   - npm install -g grunt-cli
+  - npm install -g bower
   - git config user.name "ediri"
   - git config user.email "engin.diri@gmail.com"
   - git config push.default simple
 install:
   - npm install
+  - bower install
 before_script:
  - git remote rm origin
  - git remote add origin "https://${GH_TOKEN}@${GH_REF}"
